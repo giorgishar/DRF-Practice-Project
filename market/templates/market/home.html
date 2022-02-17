@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laptops</title>
+</head>
+<body>
+    {% for product in products %}
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{ product.image.product_images }}" alt="">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.price }}</p>
+          <a href="#" class="btn btn-primary">Details</a>
+        </div>
+      </div>
+        
+    {% endfor %}
+</body>
+</html>
